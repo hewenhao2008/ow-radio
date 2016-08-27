@@ -163,4 +163,8 @@ See man 1 mpc for more information about mpc commands and options
 ## Reference
 
 - http://bbs.widora.org/t/mpd-full/58
-
+- http://www.tristancollins.me/computing/bbc-streaming-radio-script-for-mpd/
+- http://cagewebdev.com/raspberry-pi-playing-internet-radio/
+- https://silkemeyer.net/wifihifi-how-to-run-music-player-daemon-on-an-openwrt-wifi-router
+- https://forum.openwrt.org/viewtopic.php?id=49013
+- https://www.musicpd.org
