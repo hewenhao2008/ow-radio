@@ -177,30 +177,30 @@ See man 1 mpc for more information about mpc commands and options
 
 1. Installation
 
-```
-opkg install mplayer
-opkg install screen
-```
+   ```
+   opkg install mplayer
+   opkg install screen
+   ```
 
 2. Test `mplayer`
 
-```
-# local media
-mplayer /tmp/test.mp3
+   ```
+   # local media
+   mplayer /tmp/test.mp3
 
-# mms streaming
-mplayer mms://live.hitfm.cn/fm887
-```
+   # mms streaming
+   mplayer mms://live.hitfm.cn/fm887
+   ```
 
 3. Run on background
 
-```
-# start
-screen -d -m mplayer mms://live.hitfm.cn/fm887
+   ```
+   # start
+   screen -d -m mplayer mms://live.hitfm.cn/fm887
 
-# stop
-killall screen
-```
+   # stop
+   killall screen
+   ```
 
 ### Reference
 
