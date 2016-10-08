@@ -1,6 +1,8 @@
 # Network Radio on OpenWrt
 
-## Steps
+## Using `mpd`/`mpc`
+
+### Steps
 
 Tested on MediaTek LinkIt Smart 7688 board.
 
@@ -87,7 +89,7 @@ Tested on MediaTek LinkIt Smart 7688 board.
    mpc play [1/2/3]
    ```
 
-## Usage of  `mpc`
+### Usage of  `mpc`
 
 ```
 Usage: mpc [options] <command> [<arguments>]
@@ -160,7 +162,7 @@ Commands:
 See man 1 mpc for more information about mpc commands and options
 ```
 
-## Reference
+### Reference
 
 - http://bbs.widora.org/t/mpd-full/58
 - http://www.tristancollins.me/computing/bbc-streaming-radio-script-for-mpd/
@@ -168,3 +170,39 @@ See man 1 mpc for more information about mpc commands and options
 - https://silkemeyer.net/wifihifi-how-to-run-music-player-daemon-on-an-openwrt-wifi-router
 - https://forum.openwrt.org/viewtopic.php?id=49013
 - https://www.musicpd.org
+
+## Using `mplayer`
+
+### Setup
+
+1. Installation
+
+```
+opkg install mplayer
+opkg install screen
+```
+
+2. Test `mplayer`
+
+```
+# local media
+mplayer /tmp/test.mp3
+
+# mms streaming
+mplayer mms://live.hitfm.cn/fm887
+```
+
+3. Run on background
+
+```
+# start
+screen -d -m mplayer mms://live.hitfm.cn/fm887
+
+# stop
+killall screen
+```
+
+### Reference
+
+- http://godiy.net/viewthread.php?tid=13525
+
